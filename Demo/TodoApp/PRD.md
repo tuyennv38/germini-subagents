@@ -11,6 +11,7 @@
 - **View Todos**: Người dùng có thể thấy danh sách các công việc.
 - **Add Todo**: Người dùng nhập nội dung và nhấn "Add" để thêm vào danh sách.
 - **Delete Todo**: Người dùng có thể xóa một công việc đã hoàn thành.
+- **Get Current Time**: (Mới) Người dùng có thể thấy giờ hệ thống hiện tại được cập nhật từ API server.
 
 ## 4. Đặc tả kỹ thuật (Technical Specs)
 - **Ngôn ngữ**: JavaScript (Node.js cho Backend, Vanilla JS cho Frontend).

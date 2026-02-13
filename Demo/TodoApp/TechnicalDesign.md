@@ -12,14 +12,15 @@
 
 ## 3. API Endpoints
 - `GET /api/todos`: Lấy danh sách todos.
+- `GET /api/time`: (Mới) Lấy giờ hiện tại của server.
 - `POST /api/todos`: Thêm todo mới (body: `{ "text": "..." }`).
 - `DELETE /api/todos/:id`: Xóa todo theo ID.
 
 ## 4. Workflow thực thi
 1. **Dev**: Init `package.json`, cài đặt `express`.
-2. **Dev**: Viết `server.js`.
-3. **Dev**: Viết nội dung thư mục `public/`.
-4. **QA**: Chạy server và test các API bằng `curl` hoặc browser.
+2. **Dev**: Viết `server.js` (Thêm endpoint `/api/time`).
+3. **Dev**: Viết nội dung thư mục `public/` (Thêm đồng hồ hiển thị).
+4. **QA**: Chạy server và test các API.
 
 ---
 *Created by Architect Subagent*

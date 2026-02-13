@@ -1,6 +1,21 @@
-const todoInput = document.getElementById('todo-input');
 const addBtn = document.getElementById('add-btn');
 const todoList = document.getElementById('todo-list');
+const timeDisplay = document.getElementById('server-time');
+
+// Fetch server time
+async function updateTime() {
+    try {
+        const res = await fetch('/api/time');
+        const data = await res.json();
+        timeDisplay.innerText = data.time;
+    } catch (e) {
+        timeDisplay.innerText = 'Lỗi kết nối';
+    }
+}
+
+// Update time every 1 second
+setInterval(updateTime, 1000);
+updateTime();
 
 // Fetch todos from API
 async function fetchTodos() {

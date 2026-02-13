@@ -10,7 +10,7 @@ body {
     background: white;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 400px;
 }
 
@@ -25,6 +25,17 @@ h1 small {
     font-size: 0.5em;
     color: #666;
     margin-top: 0.5rem;
+}
+
+.clock-display {
+    text-align: center;
+    background: #eef2f3;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+    border: 1px solid #d1d9db;
 }
 
 .input-group {
