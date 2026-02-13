@@ -39,3 +39,8 @@ Một chu kỳ làm việc tiêu chuẩn sẽ diễn ra như sau:
 
 ---
 *Tài liệu hướng dẫn bởi Gemini Subagent*
+### 6. Quy tắc Quality Gate (Mới)
+Để đảm bảo tính chuyên nghiệp, team tuân thủ quy tắc:
+- **QA là người giữ cổng**: Nếu unit test không đạt 100%, QA không cho phép release và gửi thông tin về cho PM.
+- **PM là người điều phối**: Khi nhận lỗi từ QA, PM sẽ phân tích xem lỗi nằm ở thiết kế (mời Architect) hay ở code (mời Developer) để sửa đổi.
+- **Chỉ release khi QA xác nhận PASSED.**

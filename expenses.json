@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "description": "Ăn trưa",
+        "amount": 500000
+    },
+    {
+        "id": 2,
+        "description": "Vui chơi",
+        "amount": 100000
+    }
+]
