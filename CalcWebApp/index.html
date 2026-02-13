@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy tính Đơn giản</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calc-container">
+        <h1>Máy tính Demo</h1>
+        <div class="inputs">
+            <input type="number" id="num1" placeholder="Số thứ nhất">
+            <input type="number" id="num2" placeholder="Số thứ hai">
+        </div>
+        <div class="operators">
+            <button onclick="handleCalc('+')">+</button>
+            <button onclick="handleCalc('-')">-</button>
+            <button onclick="handleCalc('*')">×</button>
+            <button onclick="handleCalc('/')">÷</button>
+        </div>
+        <div id="result-box" class="result-box">
+            Kết quả: <span id="result">---</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
