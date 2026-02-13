@@ -9,15 +9,15 @@ Bảng `reviews`:
 - `at`: DATETIME.
 - `appVersion`: TEXT.
 
-## 2. Quy trình Crawler
-1. **Khởi tạo**: Kết nối SQLite, tạo bảng nếu chưa có.
-2. **Fetch**: Sử dụng thư viện `google-play-scraper` lấy N review mới nhất.
-3. **Upsert**: Lưu dữ liệu vào SQLite. Dùng câu lệnh `INSERT OR IGNORE` để chỉ lưu những review chưa tồn tại dựa trên `reviewId`.
-4. **Log**: Ghi lại số lượng review mới đã được thêm.
+## 2. Quy trình Crawler (Cải tiến)
+1. **Khởi tạo**: Kết nối SQLite, tạo bảng.
+2. **Input**: Yêu cầu người dùng nhập Package Name qua terminal.
+3. **Fetch**: Lấy dữ liệu từ Google Play.
+4. **Upsert**: Lưu vào database (mặc định tránh trùng).
+5. **Display**: Truy vấn database để lấy 5 bản ghi mới nhất vừa cào và in ra terminal theo định dạng sạch đẹp.
 
 ## 3. Automation (Cron)
-- Sử dụng thư viện `schedule` trong Python hoặc hướng dẫn người dùng thiết lập Windows Task Scheduler.
-- File đầu vào chính: `scraper.py`.
+- File `scraper.py` hỗ trợ cả chạy tương tác (Manual) và chạy tham số (cho Cron nếu cần mở rộng sau này).
 
 ---
 *Created by architect subagent*
