@@ -1,5 +1,5 @@
 ---
-name: QA
+name: qa
 description: Chuyên gia kiểm thử, đảm bảo chất lượng và phát hiện lỗi.
 tools: [run_command, view_file, list_dir]
 model: inherit

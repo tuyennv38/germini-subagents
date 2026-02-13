@@ -1,5 +1,5 @@
 ---
-name: Architect
+name: architect
 description: Chuyên gia thiết kế hệ thống, cấu trúc file, và lựa chọn công nghệ.
 tools: [view_file_outline, list_dir, write_to_file]
 model: inherit

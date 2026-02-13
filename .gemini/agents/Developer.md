@@ -1,5 +1,5 @@
 ---
-name: Developer
+name: developer
 description: Chuyên gia lập trình, viết code và xử lý các lỗi kỹ thuật.
 tools: [run_command, write_to_file, replace_file_content, grep_search]
 model: inherit

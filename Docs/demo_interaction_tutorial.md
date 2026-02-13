@@ -23,9 +23,9 @@ Khi bạn gửi yêu cầu trên, đây là điều sẽ xảy ra "dưới nắp
 4. **Bàn giao (Handover)**: PM kết thúc nhiệm vụ -> Agent chính lại quét tiếp -> Thấy `Architect` phù hợp để làm bước tiếp theo dựa trên PRD đã có.
 
 ## 4. Mẹo để Demo thành công
-- **Giao việc cụ thể**: "Developer hãy cài thêm thư viện Flask cho tôi" -> Agent chính sẽ biết chỉ cần gọi `Developer`.
-- **Kiểm tra tiến độ**: Bạn có thể hỏi: "Trạng thái dự án hiện tại thế nào?" -> Hệ thống thường sẽ gọi `ProductManager` để đọc file `task.md`.
-- **Yêu cầu QA**: "QA hãy chạy thử code và báo cáo lỗi nếu có" -> Agent `QA` sẽ được kích hoạt để dùng `run_command` kiểm tra.
+- **Giao việc cụ thể**: "developer hãy cài thêm thư viện Flask cho tôi" -> Agent chính sẽ biết chỉ cần gọi `developer`.
+- **Kiểm tra tiến độ**: Bạn có thể hỏi: "Trạng thái dự án hiện tại thế nào?" -> Hệ thống thường sẽ gọi `product_manager` để đọc file `task.md`.
+- **Yêu cầu QA**: "qa hãy chạy thử code và báo cáo lỗi nếu có" -> Agent `qa` sẽ được kích hoạt để dùng `run_command` kiểm tra.
 
 ---
 *Bây giờ bạn hãy thử copy câu lệnh ví dụ ở mục 2 và dán vào Gemini-CLI của mình nhé!*

@@ -1,5 +1,5 @@
 ---
-name: ProductManager
+name: product_manager
 description: Chuyên gia phân tích yêu cầu, viết PRD và quản lý danh sách công việc (task.md).
 tools: [write_to_file, replace_file_content, list_dir]
 model: inherit
