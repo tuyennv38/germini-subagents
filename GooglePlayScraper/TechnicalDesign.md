@@ -2,12 +2,9 @@
 
 ## 1. Database Schema (SQLite)
 Bảng `reviews`:
-- `reviewId`: PRIMARY KEY (Dùng ID từ Google Play để tránh trùng).
-- `userName`: TEXT.
-- `content`: TEXT.
-- `score`: INTEGER.
-- `at`: DATETIME.
-- `appVersion`: TEXT.
+- `reviewId`: PRIMARY KEY.
+- `appId`: TEXT (ID của từng ứng dụng để phân biệt).
+- `userName`, `content`, `score`, `at`, `appVersion`.
 
 ## 2. Quy trình Crawler (Cải tiến)
 1. **Khởi tạo**: Kết nối SQLite, tạo bảng.
